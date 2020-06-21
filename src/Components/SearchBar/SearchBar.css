@@ -21,20 +21,38 @@
   outline: none;
 }
 
-.SearchButton {
+.SearchBar input:disabled {
+  background-color: #555;
+  border: 1px solid #666666;
+}
+
+.SearchBar button {
   cursor: pointer;
-  width: 8.11rem;
+  min-width: 8.11rem;
   padding: .77rem 0;
   border-radius: 54px;
   background-color: #010c3f;
   text-align: center;
   font-size: .833rem;
   transition: background-color .25s;
-  border: 0px;
+  border: none;
   color: #fff;
-  font-weight: 500;
 }
 
-.SearchButton:hover {
+.SearchBar button:hover {
   background-color: rgba(108, 65, 233, .7);
+}
+
+.SearchBar button:focus {
+  outline: 0;
+}
+
+.SearchBar button.logged-out {
+  background-color: #1daf31;
+  padding: .77rem 1rem;
+  border: none;
+}
+
+.SearchBar button.logged-out:hover {
+  background-color: #278d35;
 }

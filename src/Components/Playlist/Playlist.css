@@ -5,9 +5,62 @@
   overflow-y: scroll;
   width: 37%;
   max-height: 950px;
-  padding: 2.27rem 1.16rem;
+  padding: 1.5rem 1.16rem 2.27rem; 
   background-color: rgba(1, 12, 63, 0.7);
   box-shadow: 0 4px 2px 2px #000000;
+}
+
+.Playlist .sort-instructions {
+  font-size: .8rem;
+  width: 100%;
+  color: rgb(240, 240, 135);
+  padding: .5rem;
+  text-align: center;
+}
+
+.Playlist .droppable-track-wrapper {
+  width: 100%;
+}
+
+.Playlist:hover {
+  cursor: grab;
+}
+
+.Playlist.dragging {
+  cursor: grabbing;
+}
+
+.Playlist .duration {
+  width: 100%;
+  text-align: left;
+  font-size: .75rem;
+  padding: .35rem 0;
+  color: rgb(240, 240, 135);
+}
+
+.Playlist-selectors {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.Playlist-selectors button {
+  top: -3rem;
+  /* width: 50%; */
+  height: 2.25rem;
+  margin: .8rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: .88rem;
+  margin-bottom: 20px;
+  border: none;
+  color: #fff;
+  background-color: #6c41ec; 
+}
+
+.Playlist-selectors button:hover {
+  cursor: pointer;
+  background-color:#6e974b;
 }
 
 .Playlist input {
@@ -26,14 +79,15 @@
   width: 10rem;
   padding: .77rem 0;
   border-radius: 54px;
-  border-width: 0px;
   margin-top: 1.27rem;
   background-color: #6c41ec;
   text-align: center;
   font-size: .83rem;
   transition: background-color .25s;
-  color: #fff;
-  font-weight: 500;
+}
+
+.Playlist-save.success {
+  background-color:#b5f97a;
 }
 
 .Playlist-save:hover {
